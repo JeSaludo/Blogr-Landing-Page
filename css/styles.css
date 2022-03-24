@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+   --overpass: 'Overpass', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;
+
+    --Light-red:hsl(356, 100%, 66%);
+    --Very-light-red:hsl(355, 100%, 74%);
+    --Very-dark-blue:hsl(208, 49%, 24%);
+
+
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue: hsl(240, 2%, 79%);
+    --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --Very-dark-black-blue: hsl(240, 10%, 16%);
+
+    --Very-light-red: hsl(13, 100%, 72%);
+    --Light-red: hsl(353, 100%, 62%);
+
+
+    --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    }
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 5em;
+  
+
+
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: var(--ubuntu);
+    font-weight: 300;
+
+    
+}
+li{
+    list-style-type: none;
+    display:  inline;
+    
+}
+
+
+.top-nav{
+   position: relative;
+   text-align: center;   
+   
+}
+
+.nav-list{
+    text-align: right;
+    margin-right: 50rem;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.nav-item:not(:last-child){
+    margin-right: .5rem;
+}
+.hero{
+    background-image: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(180deg,var(--Light-red), var(--Very-light-red));
+    background-position: center;
+    background-size: 250%;
+    height: 60vh;
+    border-radius: 0 0 0 100px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2em auto;
+}
+
+.cta{
+    width: 90%;
+    margin: auto;
+    margin-top: 2.3em;
+
+}
+
+h1{
+    font-size: 2.2em;
+    color:white;
+    font-family: var(--ubuntu);
+    font-weight: 400;
+
+}
+
+.hero p{
+    color: white;
+    font-size: 1.1em;
+    font-family: var(--overpass);
+    font-weight: 300;
+    padding: 1em;;
+}
+
+
+
+.btns{
+  align-items: center;
+}
+
+.btns button{
+    border: none;
+    background: none;
+    font-family: var(--ubuntu);
+    font-weight: 700;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 100px;
+}
+
+.btns button:nth-of-type(1){
+    background-color:white;
+    color: var(--Light-red)
+
+}
+
+.btns button:nth-of-type(2){
+    border:1px solid white;
+    color: white;
+    
+}
+
+.btn button{
+    border: none;
+    background: none;
+    font-family: var(--ubuntu);
+    font-weight: 700;
+    font-size: 1em;    
+    border-radius: 100px;
+    padding: 0.8rem;
+} 
+
+
+.btn button:nth-of-type(1){
+    background-color:white;
+    color: var(--Light-red)
+
+}
+
+.btn button:nth-of-type(2){
+    border:1px solid white;
+    color: white;
+    
+}
+h2{
+    font-size: 1.4em;
+    font-family: var(--ubuntu);
+    font-weight: 700;
+    color:var(--Very-dark-blue)
+}
+
+
+.h3{
+    font-size: 2em;
+    font-family: var(--overpass);
+    font-weight: 600;
+    color: white;
+
+}
+
+
+
+.description h2{
+    font-size: 2.5rem;
+    color: --Very-dark-blue;
+    text-align: center;
+    margin-bottom: -4rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.description .description-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.description .description-content .description-content-leftcolumn{
+    flex-basis: 50%;
+}
+
+.description .description-content .description-content-leftcolumn h3{
+    font-size: 1.8rem;
+    color: var(--Very-dark-blue);
+    margin-bottom: 2.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.description .description-content .description-content-leftcolumn p{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+}
+
+.description .description-content .description-content-rightcolumn{
+    position: relative;
+    flex-basis: 50%;
+}
+
+.description .description-content .description-content-rightcolumn .desktop-editor{
+    width: 150%;
+    position: relative;
+}
+
+.description .description-content .description-content-rightcolumn .mobile-editor{
+    display: none;
+}
+
+
+
+.services{
+    width: 100%;
+    padding: 8rem 10rem;
+    position: relative;
+    background: var(--Very-dark-desaturated-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+}
+
+.services .services-rightcolumn{
+    flex-basis: 50%;
+}
+
+.services .services-rightcolumn h4{
+    font-size: 2.3rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+}
+
+.services .services-rightcolumn p{
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    line-height: 1.9rem;
+}
+
+.services .services-leftcolumn{
+    flex-basis: 40%;
+    position: relative;
+    background-image: url(images/illustration-phones.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.services .services-leftcolumn .phone{
+    position: absolute;
+    left: -5rem;
+    top: -16rem;
+    z-index: 3;
+}
+
+.services .services-leftcolumn .circle-pattern{
+    position: absolute;
+    left: -19rem;
+    top: -40rem;
+    z-index: 1;
+    width: 200%;
+}
+
+
+.features{
+    width: 100%;
+    position: relative;
+    padding: 15rem 10rem 15rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(0, 26%, 96%);
+    z-index: 2;
+}
+
+.features .features-leftcolumn{
+    flex-basis: 50%;
+    position: relative;
+}
+
+.features .features-leftcolumn .desktop-illustration{
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16rem;
+}
+
+.features .features-leftcolumn .mobile-illustration{
+    display: none;
+}
+
+.features .features-rightcolumn{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.features .features-rightcolumn h5{
+    font-size: 1.8rem;
+    color: var(--Very-dark-blue);
+    margin-bottom: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.features .features-rightcolumn p{
+    font-size: .95rem;
+    color: --Very-dark-blue;
+    margin-bottom: 3rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;
+    line-height: 2.1rem;
+}
+
+
+footer{
+    width: 100%;
+    padding: 4rem 10rem 6rem;
+    background: hsl(240, 10%, 16%);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-top-right-radius: 6rem;
+}
+
+footer .footer-box{
+    flex-basis: 20%;
+}
+
+footer .footer-box h6{
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+footer .footer-box ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer .footer-box ul li a{
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+    font-size: 1rem;
+    transition: .5s;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+footer .footer-box ul li a:hover{
+    text-decoration: underline;
+}
+
+footer .attribution{
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: hsl(240, 2%, 79%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+footer .attribution a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
